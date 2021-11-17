@@ -47,7 +47,7 @@ struct CardView: View {
                 .colorInvert()
             
             Button(action: {print("lol")}) {
-                Text("OPEl      ")
+                Text("OPEN      ")
                     .background(.white)
                     
                     .foregroundColor(.black)
