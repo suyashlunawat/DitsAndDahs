@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CB59B2027479BA400712E1D /* DictionaryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB59B1F27479BA400712E1D /* DictionaryStruct.swift */; };
+		3CB59B222747A3D400712E1D /* LettersAndMorse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB59B212747A3D400712E1D /* LettersAndMorse.swift */; };
 		3CBE97932742D9DA00000A22 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE97922742D9DA00000A22 /* CardView.swift */; };
 		3CCE666F273D129000FD9569 /* MorseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE666E273D129000FD9569 /* MorseApp.swift */; };
 		3CCE6671273D129000FD9569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE6670273D129000FD9569 /* ContentView.swift */; };
@@ -16,6 +18,7 @@
 		3CCE668A273D129200FD9569 /* MorseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE6689273D129200FD9569 /* MorseUITests.swift */; };
 		3CCE668C273D129200FD9569 /* MorseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE668B273D129200FD9569 /* MorseUITestsLaunchTests.swift */; };
 		3CD0E3AD2744847500F7B3E4 /* PracticeViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */; };
+		3CE4F8FA2745572D00FB8945 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4F8F92745572D00FB8945 /* LetterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CB59B1F27479BA400712E1D /* DictionaryStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryStruct.swift; sourceTree = "<group>"; };
+		3CB59B212747A3D400712E1D /* LettersAndMorse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LettersAndMorse.swift; sourceTree = "<group>"; };
 		3CBE97922742D9DA00000A22 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3CCE666B273D129000FD9569 /* Morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCE666E273D129000FD9569 /* MorseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseApp.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		3CCE6689273D129200FD9569 /* MorseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseUITests.swift; sourceTree = "<group>"; };
 		3CCE668B273D129200FD9569 /* MorseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewMain.swift; sourceTree = "<group>"; };
+		3CE4F8F92745572D00FB8945 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		3CCE666D273D129000FD9569 /* Morse */ = {
 			isa = PBXGroup;
 			children = (
+				3CE496342746570B00AD0410 /* Stuct */,
 				3CF307812742776800B42BDD /* Views */,
 				3CCE666E273D129000FD9569 /* MorseApp.swift */,
 				3CCE6670273D129000FD9569 /* ContentView.swift */,
@@ -132,11 +139,21 @@
 			path = MorseUITests;
 			sourceTree = "<group>";
 		};
+		3CE496342746570B00AD0410 /* Stuct */ = {
+			isa = PBXGroup;
+			children = (
+				3CB59B212747A3D400712E1D /* LettersAndMorse.swift */,
+				3CB59B1F27479BA400712E1D /* DictionaryStruct.swift */,
+			);
+			path = Stuct;
+			sourceTree = "<group>";
+		};
 		3CF307812742776800B42BDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3CBE97922742D9DA00000A22 /* CardView.swift */,
 				3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */,
+				3CE4F8F92745572D00FB8945 /* LetterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD0E3AD2744847500F7B3E4 /* PracticeViewMain.swift in Sources */,
+				3CB59B222747A3D400712E1D /* LettersAndMorse.swift in Sources */,
 				3CCE6671273D129000FD9569 /* ContentView.swift in Sources */,
+				3CB59B2027479BA400712E1D /* DictionaryStruct.swift in Sources */,
 				3CBE97932742D9DA00000A22 /* CardView.swift in Sources */,
 				3CCE666F273D129000FD9569 /* MorseApp.swift in Sources */,
+				3CE4F8FA2745572D00FB8945 /* LetterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

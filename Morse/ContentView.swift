@@ -9,13 +9,14 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
+        
         TabView{
-            TranslateView()
+            PracticeViewMain()
                 .tabItem{
-                    Label("Practice", systemImage: "book.closed.fill")
+                    Label("Learning", systemImage: "book.closed.fill")
                 }
             
-            PracticeViewMain()
+            TranslateView()
                 .tabItem{
                     Label("Practice", systemImage: "message")
                 }
