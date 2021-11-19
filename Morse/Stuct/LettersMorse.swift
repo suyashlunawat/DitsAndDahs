@@ -19,10 +19,11 @@ struct Number : Hashable {
     let number : Int
 }
 
+/*
 struct Morse : Hashable{
     
     let morse : String
-}
+}*/
 
 struct Letters {
     
@@ -46,6 +47,7 @@ struct Letters {
         Letter(letter: "Q"),
         Letter(letter: "R"),
         Letter(letter: "S"),
+        Letter(letter: "T"),
         Letter(letter: "U"),
         Letter(letter: "V"),
         Letter(letter: "W"),
@@ -78,7 +80,7 @@ struct Numbers {
 
 
 
-struct  Morses {
+/*struct  Morses {
     
     let morses : [Morse] = [
         Morse(morse: "·-"),
@@ -87,7 +89,7 @@ struct  Morses {
     ]
     
     
-}
+}*/
 
 
 

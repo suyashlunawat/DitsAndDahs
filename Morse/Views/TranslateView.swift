@@ -328,10 +328,14 @@ struct ReferenceView: View {
                     Section(header: Text("ALPHABETS")) {
                         
                         ForEach(filteredLetters, id: \.self){element in
+                            NavigationLink(destination: ReferenceViewBig(letter:element.letter,morse: dictionaryCorr[element.letter]!)){
                             HStack{
                                 Text(element.letter)
                                 Spacer()
                                 Text(dictionaryCorr[element.letter]!)
+                                
+                                
+                            }
                             }
                             
                             
@@ -343,11 +347,13 @@ struct ReferenceView: View {
                     Section(header: Text("NUMBERS")) {
                         
                         ForEach(filteredNumbers, id: \.self){element in
+                            NavigationLink(destination: ReferenceViewBig(letter:String(element.number),morse: dictionaryCorr[String(element.number)]!)){
                             HStack{
                             Text(String(element.number))
                             Spacer()
                             Text(dictionaryCorr[String(element.number)]!)
                             }
+                        }
                         }
 
                     }.listStyle(.grouped)
@@ -362,8 +368,32 @@ struct ReferenceView: View {
                 
                 
                 
-            }
+            }.accentColor(.black)
         }
         
     }
+
+
+
+struct ReferenceViewBig: View {
+    var letter: String
+    var morse: String
+    var body: some View {
+        VStack {
+            Text(letter)
+                .font(.system(size: 250))
+                .fontWeight(.bold)
+                .offset(x: 0, y: 100)
+            Text(morse)
+                .font(.system(size: 250))
+                .frame(height: 200)
+                .offset(x: 0, y: -150)
+                
+                
+            
+        }
+        
+    }
+}
+
 
