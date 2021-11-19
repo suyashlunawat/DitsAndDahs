@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+
 struct MainView: View {
     var body: some View {
         
         TabView{
-            PracticeViewMain()
+            PracticeViewMainWithTitle()
                 .tabItem{
                     Label("Learning", systemImage: "book.closed.fill")
                 }
@@ -20,7 +21,7 @@ struct MainView: View {
                 .tabItem{
                     Label("Practice", systemImage: "message")
                 }
-        }
+        }.accentColor(.black)
             
     }
 }
