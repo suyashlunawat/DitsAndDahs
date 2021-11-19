@@ -23,6 +23,9 @@
 		95022BBC2747BB4A0067EE75 /* LettersMorse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BBB2747BB4A0067EE75 /* LettersMorse.swift */; };
 		95022BC02747BB860067EE75 /* cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BBE2747BB860067EE75 /* cornerRadius.swift */; };
 		95022BC12747BB860067EE75 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BBF2747BB860067EE75 /* extension.swift */; };
+		95022BC32748181C0067EE75 /* aCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC22748181C0067EE75 /* aCard.swift */; };
+		95022BC5274818260067EE75 /* anInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC4274818260067EE75 /* anInformation.swift */; };
+		95022BC7274818420067EE75 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC6274818420067EE75 /* InstructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		95022BBB2747BB4A0067EE75 /* LettersMorse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LettersMorse.swift; sourceTree = "<group>"; };
 		95022BBE2747BB860067EE75 /* cornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cornerRadius.swift; sourceTree = "<group>"; };
 		95022BBF2747BB860067EE75 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		95022BC22748181C0067EE75 /* aCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aCard.swift; sourceTree = "<group>"; };
+		95022BC4274818260067EE75 /* anInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = anInformation.swift; sourceTree = "<group>"; };
+		95022BC6274818420067EE75 /* InstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 		3CF307812742776800B42BDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95022BC6274818420067EE75 /* InstructionsView.swift */,
+				95022BC4274818260067EE75 /* anInformation.swift */,
+				95022BC22748181C0067EE75 /* aCard.swift */,
 				3CBE97922742D9DA00000A22 /* CardView.swift */,
 				3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */,
 				3CE4F8F92745572D00FB8945 /* LetterView.swift */,
@@ -317,6 +326,9 @@
 				3CBE97932742D9DA00000A22 /* CardView.swift in Sources */,
 				95022BC12747BB860067EE75 /* extension.swift in Sources */,
 				3CCE666F273D129000FD9569 /* MorseApp.swift in Sources */,
+				95022BC5274818260067EE75 /* anInformation.swift in Sources */,
+				95022BC32748181C0067EE75 /* aCard.swift in Sources */,
+				95022BC7274818420067EE75 /* InstructionsView.swift in Sources */,
 				3CE4F8FA2745572D00FB8945 /* LetterView.swift in Sources */,
 				95022BBA2747BAEA0067EE75 /* TranslateView.swift in Sources */,
 			);

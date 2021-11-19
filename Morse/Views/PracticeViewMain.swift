@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PracticeViewMainWithTitle : View {
     
+@State var showInfoInstructionsModalView: Bool = false
+    
     var body: some View{
         NavigationView {
             
@@ -23,11 +25,16 @@ struct PracticeViewMainWithTitle : View {
                             Spacer()
                             
                             Button {
-                                print("Instructions")
+                                showInfoInstructionsModalView = true
                             } label: {
                                 Image(systemName: "info.circle")
                                     .foregroundColor(Color.black)
-                            }
+                            } .sheet(isPresented: $showInfoInstructionsModalView) {
+                                if #available(iOS 15.0, *) {
+                                    InstructionsView()
+                                } else {
+                                    // Fallback on earlier versions
+                                }}
                             
                         }
                         
