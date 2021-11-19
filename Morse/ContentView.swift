@@ -19,7 +19,7 @@ struct MainView: View {
             
             TranslateViewWithTitle()
                 .tabItem{
-                    Label("Practice", systemImage: "message")
+                    Label("Translate", systemImage: "message")
                 }
         }.accentColor(.black)
             

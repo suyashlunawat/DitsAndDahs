@@ -259,6 +259,7 @@ struct ReferenceView: View {
     
     let lettersToTranslate =  Letters()
     let numbersToTranslate = Numbers()
+    let dictionaryCorr = LettersToMorse().translation
     
     var filteredLetters: [Letter] { // 1
         if searchText.isEmpty {
@@ -327,7 +328,11 @@ struct ReferenceView: View {
                     Section(header: Text("ALPHABETS")) {
                         
                         ForEach(filteredLetters, id: \.self){element in
-                            Text(element.letter)
+                            HStack{
+                                Text(element.letter)
+                                Spacer()
+                                Text(dictionaryCorr[element.letter]!)
+                            }
                             
                             
                         }
@@ -338,8 +343,11 @@ struct ReferenceView: View {
                     Section(header: Text("NUMBERS")) {
                         
                         ForEach(filteredNumbers, id: \.self){element in
+                            HStack{
                             Text(String(element.number))
-                            
+                            Spacer()
+                            Text(dictionaryCorr[String(element.number)]!)
+                            }
                         }
 
                     }.listStyle(.grouped)

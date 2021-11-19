@@ -35,6 +35,9 @@ struct aCard: View {
 
 struct aCard_Previews: PreviewProvider {
     static var previews: some View {
-        aCard(cardText: "Ciao")
+        Group {
+            aCard(cardText: "Ciao")
+            aCard(cardText: "Ciao")
+        }
     }
 }
