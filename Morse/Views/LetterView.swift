@@ -9,13 +9,13 @@ import SwiftUI
 
 struct LetterView: View {
     
-    let dictionary=Dictionary()
-    var lettera:String
-    var morse:String
-    init(lettera: String, morse: String){
-        self.lettera=lettera
-        self.morse=morse
-    }
+//    let dictionary=Dictionary()
+//    var lettera:String
+//    var morse:String
+//    init(lettera: String, morse: String){
+//        self.lettera=lettera
+//        self.morse=morse
+//    }
     
     var body: some View {
         
@@ -25,7 +25,7 @@ struct LetterView: View {
                 .fill(Color.black)
             
             VStack(spacing:-30){
-                Text(lettera)
+                Text("a")
                     .fontWeight(.bold)
                     .font(.system(size: 50.0))
                     .colorInvert()

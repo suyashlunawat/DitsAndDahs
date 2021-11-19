@@ -19,6 +19,10 @@
 		3CCE668C273D129200FD9569 /* MorseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE668B273D129200FD9569 /* MorseUITestsLaunchTests.swift */; };
 		3CD0E3AD2744847500F7B3E4 /* PracticeViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */; };
 		3CE4F8FA2745572D00FB8945 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4F8F92745572D00FB8945 /* LetterView.swift */; };
+		95022BBA2747BAEA0067EE75 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BB92747BAEA0067EE75 /* TranslateView.swift */; };
+		95022BBC2747BB4A0067EE75 /* LettersMorse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BBB2747BB4A0067EE75 /* LettersMorse.swift */; };
+		95022BC02747BB860067EE75 /* cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BBE2747BB860067EE75 /* cornerRadius.swift */; };
+		95022BC12747BB860067EE75 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BBF2747BB860067EE75 /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		3CCE668B273D129200FD9569 /* MorseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewMain.swift; sourceTree = "<group>"; };
 		3CE4F8F92745572D00FB8945 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		95022BB92747BAEA0067EE75 /* TranslateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		95022BBB2747BB4A0067EE75 /* LettersMorse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LettersMorse.swift; sourceTree = "<group>"; };
+		95022BBE2747BB860067EE75 /* cornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cornerRadius.swift; sourceTree = "<group>"; };
+		95022BBF2747BB860067EE75 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 		3CCE666D273D129000FD9569 /* Morse */ = {
 			isa = PBXGroup;
 			children = (
+				95022BBD2747BB730067EE75 /* Utility */,
 				3CE496342746570B00AD0410 /* Stuct */,
 				3CF307812742776800B42BDD /* Views */,
 				3CCE666E273D129000FD9569 /* MorseApp.swift */,
@@ -142,6 +151,7 @@
 		3CE496342746570B00AD0410 /* Stuct */ = {
 			isa = PBXGroup;
 			children = (
+				95022BBB2747BB4A0067EE75 /* LettersMorse.swift */,
 				3CB59B212747A3D400712E1D /* LettersAndMorse.swift */,
 				3CB59B1F27479BA400712E1D /* DictionaryStruct.swift */,
 			);
@@ -154,8 +164,18 @@
 				3CBE97922742D9DA00000A22 /* CardView.swift */,
 				3CD0E3AC2744847500F7B3E4 /* PracticeViewMain.swift */,
 				3CE4F8F92745572D00FB8945 /* LetterView.swift */,
+				95022BB92747BAEA0067EE75 /* TranslateView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		95022BBD2747BB730067EE75 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				95022BBE2747BB860067EE75 /* cornerRadius.swift */,
+				95022BBF2747BB860067EE75 /* extension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +310,15 @@
 			files = (
 				3CD0E3AD2744847500F7B3E4 /* PracticeViewMain.swift in Sources */,
 				3CB59B222747A3D400712E1D /* LettersAndMorse.swift in Sources */,
+				95022BC02747BB860067EE75 /* cornerRadius.swift in Sources */,
+				95022BBC2747BB4A0067EE75 /* LettersMorse.swift in Sources */,
 				3CCE6671273D129000FD9569 /* ContentView.swift in Sources */,
 				3CB59B2027479BA400712E1D /* DictionaryStruct.swift in Sources */,
 				3CBE97932742D9DA00000A22 /* CardView.swift in Sources */,
+				95022BC12747BB860067EE75 /* extension.swift in Sources */,
 				3CCE666F273D129000FD9569 /* MorseApp.swift in Sources */,
 				3CE4F8FA2745572D00FB8945 /* LetterView.swift in Sources */,
+				95022BBA2747BAEA0067EE75 /* TranslateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

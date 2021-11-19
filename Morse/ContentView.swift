@@ -16,7 +16,7 @@ struct MainView: View {
                     Label("Learning", systemImage: "book.closed.fill")
                 }
             
-            TranslateView()
+            TranslateViewWithTitle()
                 .tabItem{
                     Label("Practice", systemImage: "message")
                 }
@@ -25,13 +25,13 @@ struct MainView: View {
     }
 }
 
-struct TranslateView: View {
+/*struct TranslateView: View {
     var body: some View {
         Text("Translate")
             .padding()
             
     }
-}
+} */
 
 
 

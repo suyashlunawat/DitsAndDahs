@@ -53,8 +53,4 @@ struct LettersToMorse {
 
 
 
-var strutturaDati = LettersToMorse()
 
-stringaUtente
-
-traduzione = strutturaDati.translation[stringaUtente[0]]
