@@ -28,6 +28,7 @@
 		95022BC32748181C0067EE75 /* aCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC22748181C0067EE75 /* aCard.swift */; };
 		95022BC5274818260067EE75 /* anInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC4274818260067EE75 /* anInformation.swift */; };
 		95022BC7274818420067EE75 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC6274818420067EE75 /* InstructionsView.swift */; };
+		9593DE54274BB12E0056E66B /* LandscapeLetterLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9593DE53274BB12E0056E66B /* LandscapeLetterLearningView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		95022BC22748181C0067EE75 /* aCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aCard.swift; sourceTree = "<group>"; };
 		95022BC4274818260067EE75 /* anInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = anInformation.swift; sourceTree = "<group>"; };
 		95022BC6274818420067EE75 /* InstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		9593DE53274BB12E0056E66B /* LandscapeLetterLearningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeLetterLearningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				95022BC6274818420067EE75 /* InstructionsView.swift */,
 				95022BC4274818260067EE75 /* anInformation.swift */,
+				9593DE53274BB12E0056E66B /* LandscapeLetterLearningView.swift */,
 				95022BC22748181C0067EE75 /* aCard.swift */,
 				3CBE97922742D9DA00000A22 /* CardView.swift */,
 				3CE8248E274B1586006DBA3B /* LetterClass.swift */,
@@ -330,6 +333,7 @@
 				3CCE6671273D129000FD9569 /* ContentView.swift in Sources */,
 				3CB59B2027479BA400712E1D /* DictionaryStruct.swift in Sources */,
 				3CBE97932742D9DA00000A22 /* CardView.swift in Sources */,
+				9593DE54274BB12E0056E66B /* LandscapeLetterLearningView.swift in Sources */,
 				95022BC12747BB860067EE75 /* extension.swift in Sources */,
 				3CE82492274BADE2006DBA3B /* Stored.swift in Sources */,
 				3CCE666F273D129000FD9569 /* MorseApp.swift in Sources */,
@@ -499,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Morse/Preview Content\"";
-				DEVELOPMENT_TEAM = YR37B9HTTD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -528,7 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Morse/Preview Content\"";
-				DEVELOPMENT_TEAM = YR37B9HTTD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
