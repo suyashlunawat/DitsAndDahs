@@ -16,8 +16,11 @@ struct LetterView: View {
 //        self.lettera=lettera
 //        self.morse=morse
 //    }
-    
+    var appLet: LetterAndMorse
+
     var body: some View {
+        
+        
         
         ZStack{
             
@@ -25,12 +28,12 @@ struct LetterView: View {
                 .fill(Color.black)
             
             VStack(spacing:-30){
-                Text("a")
+                Text(appLet.lettera)
                     .fontWeight(.bold)
                     .font(.system(size: 50.0))
                     .colorInvert()
                 
-                Text("·-")
+                Text(appLet.morse)
                     .fontWeight(.bold)
                     .font(.system(size: 75.0))
                     .colorInvert()
@@ -41,8 +44,8 @@ struct LetterView: View {
     }
 }
 
-struct LetterView_Previews: PreviewProvider {
-    static var previews: some View {
-        LetterView()
-    }
-}
+//struct LetterView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LetterView()
+//    }
+//}

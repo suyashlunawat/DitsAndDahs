@@ -45,8 +45,11 @@ struct CardView: View {
                 .offset(x: 0, y: 90)
                 .font(.system(size: 18.0))
                 .colorInvert()
+            HStack{
             
+
             Button(action: {print("lol")}) {
+                NavigationLink(destination: LetterClass()){}
                 Text("OPEN      ")
                     .background(.white)
                     
@@ -57,7 +60,7 @@ struct CardView: View {
                     .frame(width: 50, height: 21)
             }.offset(x: 110, y: 55)
 
-        }
+            }}
         .frame(width: 331, height: 239)
             
         
