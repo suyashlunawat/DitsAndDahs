@@ -385,7 +385,7 @@ struct ReferenceViewBig: View {
                 .fontWeight(.bold)
                 .offset(x: 0, y: 100)
             Text(morse)
-                .font(.system(size: 250))
+                .font(.system(size: 181))
                 .frame(height: 200)
                 .offset(x: 0, y: -150)
                 
