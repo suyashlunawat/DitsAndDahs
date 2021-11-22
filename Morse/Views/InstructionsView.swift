@@ -8,6 +8,8 @@
 import SwiftUI
 import AVFoundation
 
+
+
 struct InstructionsView: View {
     @State var isShowinginfo1: Bool = false
     @State var isShowinginfo2: Bool = false
@@ -15,6 +17,7 @@ struct InstructionsView: View {
     @State var isShowinginfo4: Bool = false
     @State var isShowinginfo5: Bool = false
     @State var audioPlayer: AVAudioPlayer?
+    
     
     
     
@@ -32,7 +35,9 @@ struct InstructionsView: View {
                     
                     .onTapGesture {
                         
-                        withAnimation {
+                       
+                        
+                       withAnimation {
                             
                             isShowinginfo2 = false
                             isShowinginfo3 = false
@@ -40,6 +45,8 @@ struct InstructionsView: View {
                             isShowinginfo5 = false
                             isShowinginfo1 = true
                         }
+                        
+                        playSound(sound:"Dot", type: "mp3")
                         
                     }
                 
@@ -63,6 +70,8 @@ struct InstructionsView: View {
                             isShowinginfo1 = false
 
                         }
+                        
+                        playSound(sound:"Line", type: "mp3")
 
                     }
 
@@ -146,6 +155,17 @@ struct InstructionsView: View {
     }
         .padding()
 }
+    
+    func playSound(sound: String, type: String) {
+          if let path = Bundle.main.path(forResource: sound, ofType: type) {
+              do {
+                  audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                  audioPlayer?.play()
+              } catch {
+                  print("ERROR")
+              }
+          }
+      }
 }
 //
 //

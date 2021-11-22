@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct PracticeViewMainWithTitle : View {
+struct LearningViewMainWithTitle : View {
     
 @State var showInfoInstructionsModalView: Bool = false
     
     var body: some View{
         NavigationView {
             
-            PracticeViewMain()
+            LearningViewMain()
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
@@ -47,7 +47,7 @@ struct PracticeViewMainWithTitle : View {
     
 }
 
-struct PracticeViewMain: View {
+struct LearningViewMain: View {
     var body: some View {
         
         VStack{
@@ -61,8 +61,8 @@ struct PracticeViewMain: View {
     }
 }
 
-struct PracticeViewMain_Previews: PreviewProvider {
+struct LearningViewMain_Previews: PreviewProvider {
     static var previews: some View {
-        PracticeViewMainWithTitle()
+        LearningViewMainWithTitle()
     }
 }

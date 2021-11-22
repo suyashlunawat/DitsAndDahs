@@ -27,6 +27,8 @@
 		95022BC5274818260067EE75 /* anInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC4274818260067EE75 /* anInformation.swift */; };
 		95022BC7274818420067EE75 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95022BC6274818420067EE75 /* InstructionsView.swift */; };
 		9593DE54274BB12E0056E66B /* LandscapeLetterLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9593DE53274BB12E0056E66B /* LandscapeLetterLearningView.swift */; };
+		95E1EA17274BFF510010E8B1 /* Dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95E1EA16274BFF510010E8B1 /* Dot.mp3 */; };
+		95E1EA19274BFF580010E8B1 /* Line.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95E1EA18274BFF580010E8B1 /* Line.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		95022BC4274818260067EE75 /* anInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = anInformation.swift; sourceTree = "<group>"; };
 		95022BC6274818420067EE75 /* InstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		9593DE53274BB12E0056E66B /* LandscapeLetterLearningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeLetterLearningView.swift; sourceTree = "<group>"; };
+		95E1EA16274BFF510010E8B1 /* Dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dot.mp3; sourceTree = "<group>"; };
+		95E1EA18274BFF580010E8B1 /* Line.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Line.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 		3CF307812742776800B42BDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95E1EA16274BFF510010E8B1 /* Dot.mp3 */,
+				95E1EA18274BFF580010E8B1 /* Line.mp3 */,
 				95022BC6274818420067EE75 /* InstructionsView.swift */,
 				95022BC4274818260067EE75 /* anInformation.swift */,
 				9593DE53274BB12E0056E66B /* LandscapeLetterLearningView.swift */,
@@ -294,7 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E1EA17274BFF510010E8B1 /* Dot.mp3 in Resources */,
 				3CCE6676273D129100FD9569 /* Preview Assets.xcassets in Resources */,
+				95E1EA19274BFF580010E8B1 /* Line.mp3 in Resources */,
 				3CCE6673273D129100FD9569 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
