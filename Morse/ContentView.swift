@@ -9,10 +9,13 @@ import SwiftUI
 
 
 struct MainView: View {
+    
+    
+    
     var body: some View {
         
         TabView{
-            PracticeViewMainWithTitle()
+            LetterClass()
                 .tabItem{
                     Label("Learning", systemImage: "book.closed.fill")
                 }
