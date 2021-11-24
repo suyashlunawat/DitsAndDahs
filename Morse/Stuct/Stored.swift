@@ -47,4 +47,46 @@ class duck: ObservableObject
     LetterAndMorse(lettera:"8", morse:"---··"),
     LetterAndMorse(lettera:"9", morse:"----·")
 ]
+    @Published var hexCoreLetters: [ LetterAndMorse] = [
+    LetterAndMorse(lettera:"A", morse:"·-"),
+    LetterAndMorse(lettera:"B", morse:"-···"),
+    LetterAndMorse(lettera:"C", morse:"-·-·"),
+    LetterAndMorse(lettera:"D", morse:"-··"),
+    LetterAndMorse(lettera:"E", morse:"·"),
+    LetterAndMorse(lettera:"F", morse:"··-·"),
+    LetterAndMorse(lettera:"G", morse:"--·"),
+    LetterAndMorse(lettera:"H", morse:"····"),
+    LetterAndMorse(lettera:"I", morse:"··"),
+    LetterAndMorse(lettera:"J", morse:"·---"),
+    LetterAndMorse(lettera:"K", morse:"-·-"),
+    LetterAndMorse(lettera:"L", morse:"·-··"),
+    LetterAndMorse(lettera:"M", morse:"--") ,
+    LetterAndMorse(lettera:"N", morse:"-·"),
+    LetterAndMorse(lettera:"O", morse:"---"),
+    LetterAndMorse(lettera:"P", morse:"·--·"),
+    LetterAndMorse(lettera:"Q", morse:"--·-"),
+    LetterAndMorse(lettera:"R", morse: "·-·"),
+    LetterAndMorse(lettera:"S", morse:"···"),
+    LetterAndMorse(lettera:"T", morse:"-"),
+    LetterAndMorse(lettera:"U", morse:"··-"),
+    LetterAndMorse(lettera:"V", morse:"···-"),
+    LetterAndMorse(lettera:"W", morse:"·--"),
+    LetterAndMorse(lettera:"X", morse:"-··-"),
+    LetterAndMorse(lettera:"Y", morse:"-·--"),
+    LetterAndMorse(lettera:"Z", morse:"--··"),
+
+]
+    
+    @Published var hexCoreNumbers: [ LetterAndMorse] = [
+        LetterAndMorse(lettera:"1", morse:"·----"),
+        LetterAndMorse(lettera:"2", morse:"··---"),
+        LetterAndMorse(lettera:"3", morse:"···--"),
+        LetterAndMorse(lettera:"4", morse:"····-"),
+        LetterAndMorse(lettera:"5", morse:"·····"),
+        LetterAndMorse(lettera:"6", morse:"-····"),
+        LetterAndMorse(lettera:"7", morse:"--···"),
+        LetterAndMorse(lettera:"8", morse:"---··"),
+        LetterAndMorse(lettera:"9", morse:"----·"),
+        LetterAndMorse(lettera:"0", morse:"-----")
+]
 }

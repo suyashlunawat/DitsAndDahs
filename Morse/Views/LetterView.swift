@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+import AVFoundation
+
 struct LetterView: View {
+    
+    @State var audioPlayerLetterF: AVAudioPlayer?
     
 //    let dictionary=Dictionary()
 //    var lettera:String
@@ -37,10 +41,53 @@ struct LetterView: View {
                     .fontWeight(.bold)
                     .font(.system(size: 75.0))
                     .colorInvert()
+            }        .onTapGesture {
+                lettersSound(morse: appLet.morse)
             }
         }
-        .frame(width: 150, height: 150)
+    
         
+        .frame(width: 166, height: 166)
+        
+        
+    }
+    
+    func playSound(sound: String, type: String) {
+          if let path = Bundle.main.path(forResource: sound, ofType: type) {
+              do {
+                  audioPlayerLetterF = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                  audioPlayerLetterF?.play()
+              } catch {
+                  print("ERROR")
+              }
+          }
+      }
+    
+    func lettersSound(morse: String){
+        
+        
+        
+        
+        
+        
+        for (index, char) in morse.enumerated() {
+            
+            
+            
+           if index != 0{
+            playSound(sound: "Silence01", type: "mp3")
+               usleep(100000)
+            }
+           if char == "-"{
+               playSound(sound: "Line", type: "mp3")
+               usleep(300000)
+            }
+
+            else if char == "·"{
+                playSound(sound: "Dot", type : "mp3")
+                usleep(100000)
+            }
+        }
     }
 }
 

@@ -182,7 +182,7 @@ struct TranslateViewFieldOutputBackground: View{
     
     var body: some View {
         
-        VStack{
+
             
             VStack(alignment:.trailing, spacing: 0) {
                 
@@ -190,7 +190,7 @@ struct TranslateViewFieldOutputBackground: View{
                     .fill(Color(red: 0.84706, green: 0.84706, blue: 0.84706, opacity: 0.44))
                     .cornerRadius(39, corners: [.bottomLeft, .bottomRight])
                     .frame(minWidth: 0, maxWidth: .infinity)
-            }
+
         }
         
         

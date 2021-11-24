@@ -6,14 +6,22 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 
-struct LandscapeLetterLearningView: View {
+struct LandscapeLettersAndNumbersLearningView: View {
     
+    @State var startValue : Int
+    @State var endValue : Int
     @State var value : Int
     
-    init(with value: Int) {
-        self.value = value
+    @State var audioPlayerLetter: AVAudioPlayer?
+    
+    
+    init(with startValue: Int, to endValue : Int) {
+        self.startValue = startValue
+        self.endValue = endValue
+        self.value = startValue
     }
     
     var letters : [String] = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"]
@@ -22,17 +30,61 @@ struct LandscapeLetterLearningView: View {
                             "--·","····","··","·---","-·-" ,"·-··","--","-·","---","·--·","--·-","·-·","···","-","··-","···-","·--","-··-","-·--","--··","·----","··---","···--","····-","·····","-····","--···","---··","----·","-----"]
     
      func increment(){
-        value = (value + 1) % letters.count
+         if value == endValue - 1{
+             value = startValue
+         }
+         else{
+             value = (value + 1)
+         }
     }
     
      func decrement(){
-         if value == 0 {
-             value = 35
+         if value == startValue {
+             value = endValue - 1
          }
          else {value = (value - 1)}
          
         
     }
+    
+    func playSound(sound: String, type: String) {
+          if let path = Bundle.main.path(forResource: sound, ofType: type) {
+              do {
+                  audioPlayerLetter = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                  audioPlayerLetter?.play()
+              } catch {
+                  print("ERROR")
+              }
+          }
+      }
+    
+    func lettersSound(morse: String){
+        
+        
+        
+        
+        
+        
+        for (index, char) in morse.enumerated() {
+            
+            
+            
+           if index != 0{
+            playSound(sound: "Silence01", type: "mp3")
+               usleep(100000)
+            }
+           if char == "-"{
+               playSound(sound: "Line", type: "mp3")
+               usleep(300000)
+            }
+
+            else if char == "·"{
+                playSound(sound: "Dot", type : "mp3")
+                usleep(100000)
+            }
+        }
+    }
+    
     var body: some View {
         
         
@@ -89,11 +141,14 @@ struct LandscapeLetterLearningView: View {
                     .font(.system(size: 40))
                 
                 
+            }.onTapGesture {
+                
+                lettersSound(morse: morse[value])
             }
             .padding()
         }.padding()
-        .background(Color.black).position(.init(x: 387, y: 195))
-        //.padding()
+        .background(Color.black).position(.init(x: 387, y: 155))
+        .padding()
         
     }
 }
@@ -108,15 +163,15 @@ struct LandscapeLetterLearningView: View {
 
 
 @available(iOS 15.0, *)
-struct LandscapeLetterLearningView_Previews: PreviewProvider {
+struct LandscapeLettersAndNumbersLearningView_Previews: PreviewProvider {
 
     @available(iOS 15.0, *)
     static var previews: some View {
        
 
         if #available(iOS 15.0, *) {
-            LandscapeLetterLearningView(with:2)
-                .previewInterfaceOrientation(.landscapeRight)
+            LandscapeLettersAndNumbersLearningView(with:0,to:26)
+                .previewInterfaceOrientation(.portrait)
         } else {
             // Fallback on earlier versions
         }

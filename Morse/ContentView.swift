@@ -15,7 +15,7 @@ struct MainView: View {
     var body: some View {
         
         TabView{
-            LearningViewMainWithTitle()
+            LearningViewMain()
                 .tabItem{
                     Label("Learning", systemImage: "book.closed.fill")
                 }

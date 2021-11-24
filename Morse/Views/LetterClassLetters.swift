@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct LetterClass: View {
+struct LetterClassLetters: View {
+    
     
     @EnvironmentObject var cats : duck
+    
     
     private var columns: [GridItem] = [
             GridItem(.fixed(100), spacing: 80),
@@ -20,7 +22,7 @@ struct LetterClass: View {
         
         ScrollView{
         LazyVGrid(columns: columns){
-            ForEach(cats.hexCore){cat in
+            ForEach(cats.hexCoreLetters){cat in
                 LetterView(appLet: cat)
             }
         }
@@ -28,8 +30,9 @@ struct LetterClass: View {
     }
 }
 
-struct LetterClass_Previews: PreviewProvider {
+struct LetterClassLetters_Previews: PreviewProvider {
+    
     static var previews: some View {
-        LetterClass()
+        LetterClassLetters().environmentObject(duck()).previewInterfaceOrientation(.landscapeLeft)
     }
 }

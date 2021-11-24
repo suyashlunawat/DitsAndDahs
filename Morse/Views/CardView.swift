@@ -7,15 +7,38 @@
 
 import SwiftUI
 
+
 struct CardView: View {
+    
+    @State private var tabBar: UITabBar! = nil
+    
+    @EnvironmentObject var cats : duck
+    
+    @State var isLinkActive = false
     
     static let grayCustom = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.00)
     
     static let grayPoint = UnitPoint(x: 0.5, y: 0.65)
     
+    var cardName : String
+    var cardDescription : String
+    var cardImage : String
+    
+    
+    @State var letters : Bool
+    
+    init(cardName: String, cardDescription: String, cardImage : String, letters: Bool){
+        self.cardName = cardName
+        self.cardDescription = cardDescription
+        self.cardImage = cardImage
+        self.letters = letters
+        
+    }
+    
     var body: some View {
-        
-        
+
+        NavigationLink(destination: OrientationView(letters: .constant(letters)).onAppear { self.tabBar.isHidden = true }     // !!
+                        .onDisappear { self.tabBar.isHidden = false },isActive: $isLinkActive){
         
         ZStack {
             
@@ -31,45 +54,52 @@ struct CardView: View {
                         startPoint: CardView.grayPoint,
                         endPoint: CardView.grayPoint))
         
-            Image("Letter")
+            Image(cardImage)
                 .offset(x: 0, y: -45)
             
-            Text("LETTERS")
-//                .font(Font.custom("SF Pro", size: 20.0))
+            Text(cardName)
+                .font(Font.custom("SF Pro", size: 20.0))
                 .fontWeight(.bold)
                 .font(.system(size: 24.0))
                 .offset(x: -90, y: 50)
                 .colorInvert()
             
-            Text("Use this section to get familiar how letters are written in morse ")
+            Text(cardDescription)
                 .offset(x: 0, y: 90)
                 .font(.system(size: 18.0))
                 .colorInvert()
-            HStack{
+            
             
 
-            Button(action: {print("lol")}) {
-                NavigationLink(destination: LetterClass()){}
-                Text("OPEN      ")
-                    .background(.white)
-                    
-                    .foregroundColor(.black)
-                    .font(.system(size: 13.0))
+                
+            Button(action: {
+               self.isLinkActive = true
+            }) {
+                
+                    Text("")
+                       
+              
+            }
+           }
 
-                    .clipShape(RoundedRectangle(cornerRadius: 10.5, style: .continuous))
-                    .frame(width: 50, height: 21)
-            }.offset(x: 110, y: 55)
-
-            }}
-        .frame(width: 331, height: 239)
-            
+          
         
-    }
+            
+        }
+        .frame(width: 331, height: 239)
+       .background(TabBarAccessor { tabbar in   // << here !!
+       self.tabBar = tabbar
+   })
+        }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(cardName: "LETTERS", cardDescription: "Use this section to get familiar how letters are written in morse ", cardImage: "Letter", letters : true).environmentObject(duck())
         
     }
 }
+
+
+
+

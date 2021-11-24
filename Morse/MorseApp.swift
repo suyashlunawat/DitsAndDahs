@@ -9,8 +9,12 @@ import SwiftUI
 
 @main
 struct MorseApp: App {
+   
+    
+    
     
     @StateObject var foca : duck = duck()
+    
     
     var body: some Scene {
         WindowGroup {
@@ -18,3 +22,4 @@ struct MorseApp: App {
         }
     }
 }
+
